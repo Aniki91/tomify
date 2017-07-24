@@ -1,9 +1,9 @@
 Tomify - By Thomas Beton
 -------------
 
-**Description**
-A parody of Spotify.
-The main functionality is experimenting with the HTML5 media player.
+**Description:**
+- A parody of Spotify.
+- The main functionality is experimenting with the HTML5 media player.
 
 **Install:**
 
