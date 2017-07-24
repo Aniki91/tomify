@@ -1,0 +1,170 @@
+$playerBackgroundColor: #164952;
+$playerAlbumProgressColor: #A2A2A2;
+
+.player__container {
+  background-color: $colorFive;
+  height: 99px;
+  box-shadow: 0px -3px 5px 0px rgba(0,0,0,0.25);
+}
+
+.player__inner__container {
+  height: 65px;
+  position: relative;
+  top: 17px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.player__album__cover {
+  background: url("/assets/album-covers/album-1@2x.png"); // Template Album Cover
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 65px;
+  width:  65px;
+  border-radius: 3px;
+}
+
+.player__album__title {
+  width: 150px;
+  height: 20px;
+  text-align: left;
+  color: white;
+  font-weight: 300;
+  position: absolute;
+  top: 0px;
+  left: 80px;
+  user-select: none;
+}
+
+.player__album__progress {
+  width: 65%;
+  position: absolute;
+  left: 80px;
+  height: 2px;
+  top: 30px;
+  background-color: $colorSix;
+}
+
+.player__progress__bar {
+  background-color: white;
+  height: 2px;
+}
+
+.player__progress__circle {
+  width: 12px;
+  height: 12px;
+  border-radius: 50px;
+  background-color: white;
+  position: relative;
+  top: -7px;
+}
+
+.player__song__length {
+  width: 30px;
+  height: 15px;
+  color: white;
+  float: right;
+  position: relative;
+  top: -5px;
+  font-size: 12px;
+  text-align: right;
+}
+
+.player__btn__loop {
+  background: url("/assets/ui/icons/repeat-icon@2x.png"); // Repeat Icon Image
+  background-size: cover;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 49px;
+  left: 180px;
+  opacity: 0.5;
+  cursor: pointer;
+  transition: opacity 0.3s;
+
+  &.btn__loop--enabled {
+    opacity: 1;
+  }
+}
+
+.player__btn__shuffle {
+  background: url("/assets/ui/icons/shuffle-icon@2x.png"); // Shuffle Icon Image
+  background-size: cover;
+  width: 25px;
+  height: 17px;
+  position: absolute;
+  top: 50px;
+  left: 130px;
+  opacity: 0.5;
+  cursor: pointer;
+  transition: opacity 0.5s;
+
+  &:hover {
+    opacity: 1
+  }
+}
+
+.player__btn__play {
+  background: url("/assets/ui/icons/play-icon@2x.png"); // Play Button Icon Image
+  background-size: cover;
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  top: 45px;
+  left: 80px;
+  opacity: 0.5;
+  cursor: pointer;
+  transition: opacity 0.3s;
+
+  &.btn__play--enabled {
+    opacity: 1;
+  }
+}
+
+.player__user__name {
+  position: relative;
+  top: 15px;
+  font-size: 14px;
+  font-weight: bold;
+  left: 5px;
+  letter-spacing: -1px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.player__user__playlist {
+  width: 220px;
+  height: 65px;
+  float: right;
+  position: relative;
+  top: -65px;
+  right: -20px;
+  margin-right: 7px;
+}
+
+.user__playlist__avatar {
+  background: url("/assets/avatars/avatar-5@2x.png"); // Avatar Image
+  background-size: cover;
+  width: 65px;
+  height: 65px;
+  float: left;
+}
+
+.user__name--playlist {
+  color: white;
+  width: auto;
+}
+
+.user__activity--playlist {
+  color: white;
+}
+
+@media screen and (max-width: 1460px) {
+  .player__user__playlist {
+    display: none;
+  }
+
+  .player__album__progress {
+    width: 82%;
+  }
+}

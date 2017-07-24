@@ -1,0 +1,605 @@
+body {
+  background-color: #09BB9B;
+  font-family: "Open sans", serif;
+  margin: 0px;
+  padding: 0px; }
+
+.app__container {
+  width: 72%;
+  min-width: 755px;
+  height: 100%;
+  margin: auto; }
+
+.header__container {
+  height: 100px; }
+
+.header__logo {
+  background: url("/assets/ui/brand-logo@2x.png");
+  background-size: cover;
+  width: 125px;
+  height: 30px;
+  position: relative;
+  float: left;
+  top: 50%;
+  left: 60px;
+  transform: translateY(-50%); }
+
+.header__user {
+  background: url("/assets/avatars/avatar-3@2x.png");
+  background-size: cover;
+  width: 60px;
+  height: 60px;
+  right: 60px;
+  float: right;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  cursor: pointer; }
+
+.user__menu__arrow {
+  background-color: white;
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  top: 65px;
+  left: 23px;
+  transform: rotate(45deg);
+  display: block; }
+  .user__menu__arrow.arrow--hide {
+    display: none; }
+
+.user__menu {
+  background-color: white;
+  border-radius: 5px;
+  width: 190px;
+  height: 150px;
+  position: absolute;
+  top: 70px;
+  right: 0px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.3);
+  display: block;
+  user-select: none; }
+  .user__menu.menu--hide {
+    display: none; }
+
+.menu__option {
+  width: 100%;
+  height: 50px;
+  cursor: pointer; }
+
+.option__img {
+  height: 25px;
+  width: 25px;
+  float: left;
+  margin: 12px; }
+
+.option__txt {
+  letter-spacing: -1px;
+  position: relative;
+  top: 14px; }
+
+.option--help {
+  background: url("/assets/ui/icons/help-icon@2x.png");
+  background-size: cover; }
+
+.option--preferences {
+  background: url("/assets/ui/icons/preferences-icon@2x.png");
+  background-size: cover; }
+
+.option--logout {
+  background: url("/assets/ui/icons/logout-icon@2x.png");
+  background-size: cover; }
+
+.center__container {
+  position: relative;
+  height: 575px;
+  margin: 10px; }
+
+.activity__container {
+  background-color: #E1F1F3;
+  position: relative;
+  float: right;
+  right: 20px;
+  border-radius: 5px;
+  width: 300px;
+  height: 565px; }
+
+.activity__title {
+  position: relative;
+  text-align: left;
+  margin-top: 10px;
+  margin-left: 30px;
+  font-weight: 100;
+  letter-spacing: -2px;
+  padding-top: 4px;
+  width: 275px;
+  font-size: 52px;
+  user-select: none;
+  cursor: default;
+  height: 78px; }
+
+.activity__feed {
+  width: 100%;
+  height: 473px; }
+
+.feed__user__container {
+  width: 100%;
+  height: 80px; }
+
+.user__avatar {
+  width: 65px;
+  height: 65px;
+  float: left;
+  margin: 7px;
+  margin-left: 30px;
+  cursor: pointer; }
+
+.user__avatar__one {
+  background: url("/assets/avatars/avatar-1@2x.png");
+  background-size: cover; }
+
+.user__avatar__two {
+  background: url("/assets/avatars/avatar-2@2x.png");
+  background-size: cover; }
+
+.user__avatar__three {
+  background: url("/assets/avatars/avatar-3@2x.png");
+  background-size: cover; }
+
+.user__avatar__four {
+  background: url("/assets/avatars/avatar-4@2x.png");
+  background-size: cover; }
+
+.user__avatar__five {
+  background: url("/assets/avatars/avatar-5@2x.png");
+  background-size: cover; }
+
+.user__name {
+  position: relative;
+  top: 15px;
+  font-size: 14px;
+  font-weight: bold;
+  left: 5px;
+  letter-spacing: -1px;
+  cursor: pointer;
+  user-select: none; }
+
+.user__activity {
+  position: relative;
+  left: 5px;
+  top: 18px;
+  font-size: 12px;
+  letter-spacing: -1px;
+  user-select: none;
+  cursor: default; }
+
+.activity__hightlight {
+  color: #09BB9B;
+  font-weight: bold;
+  cursor: pointer; }
+
+.activity__browse {
+  width: 100%;
+  height: 73px; }
+
+.activity__browse__btn {
+  color: white;
+  position: relative;
+  background-color: #B5B5B5;
+  border-radius: 50px;
+  height: 35px;
+  width: 80px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  opacity: 1;
+  transition: background-color 0.5s; }
+  .activity__browse__btn:hover {
+    background-color: #9c9c9c; }
+
+.browse__prev {
+  float: left;
+  left: 60px; }
+
+.browse__next {
+  float: right;
+  right: 60px; }
+
+.browse__txt {
+  position: relative;
+  margin: 0px;
+  top: 7px;
+  text-align: center;
+  letter-spacing: -1px;
+  font-weight: 300;
+  user-select: none; }
+
+.btn--disabled {
+  opacity: 0.3; }
+
+@media screen and (max-width: 1460px) {
+  .activity__container {
+    position: relative;
+    top: 20px;
+    width: 650px;
+    height: 270px;
+    float: none;
+    display: block;
+    margin: auto;
+    right: 0px; }
+
+  .activity__title {
+    position: relative;
+    text-align: left;
+    margin-left: 20px;
+    font-weight: 100;
+    letter-spacing: -2px;
+    padding-top: 10px;
+    width: 300px;
+    font-size: 52px;
+    user-select: none;
+    cursor: default;
+    height: 88px; }
+
+  .activity__feed {
+    height: 100%;
+    float: left; }
+
+  .feed__user__container {
+    height: 80px;
+    width: 210px;
+    float: left; }
+
+  .user__name {
+    position: relative;
+    top: 15px;
+    width: 75px;
+    font-size: 14px;
+    font-weight: bold;
+    left: 5px;
+    float: left;
+    letter-spacing: -1px;
+    cursor: pointer;
+    user-select: none; }
+
+  .activity__feed {
+    width: 100%; }
+
+  .browse__prev {
+    float: left;
+    left: 30px; }
+
+  .browse__next {
+    float: right;
+    right: 30px; } }
+.library__container {
+  position: relative;
+  left: 50px;
+  width: 650px;
+  height: 340px;
+  float: left;
+  background-color: #E1F1F3;
+  border-radius: 5px; }
+
+.library__header {
+  width: 100%;
+  height: 75px; }
+
+.library__title {
+  position: relative;
+  text-align: center;
+  font-weight: 100;
+  margin-top: 10px;
+  letter-spacing: -2px;
+  padding-top: 4px;
+  width: 300px;
+  font-size: 52px;
+  float: left;
+  user-select: none;
+  cursor: default; }
+
+.library__btn__discoverArtists {
+  float: right;
+  position: relative;
+  background-color: #35b57f;
+  top: 30px;
+  height: 40px;
+  width: 150px;
+  border-radius: 50px;
+  right: 30px;
+  cursor: pointer;
+  transition: background-color 0.5s; }
+  .library__btn__discoverArtists:hover {
+    background-color: #298e63; }
+
+.library__btn__discoverArtists__txt {
+  color: white;
+  margin: 0px;
+  margin-top: 10px;
+  font-weight: 300;
+  text-align: center;
+  user-select: none;
+  cursor: pointer; }
+
+.library__albums__container {
+  height: 255px;
+  position: relative;
+  top: 10px; }
+
+.library__albums {
+  width: 65px;
+  height: 65px;
+  float: left;
+  margin-left: 15px;
+  margin-top: 15px;
+  border-radius: 3px;
+  cursor: pointer; }
+
+.library__hover {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0;
+  border-radius: 3px;
+  transition: opacity 0.3s; }
+  .library__hover:hover {
+    opacity: 0.5; }
+
+.library__hover__img {
+  background: url("/assets/ui/icons/play-icon@2x.png");
+  width: 39px;
+  height: 39px;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+
+.album__one {
+  background: url("/assets/album-covers/album-1@2x.png");
+  background-size: cover; }
+
+.album__two {
+  background: url("/assets/album-covers/album-2@2x.png");
+  background-size: cover; }
+
+.album__three {
+  background: url("/assets/album-covers/album-3@2x.png");
+  background-size: cover; }
+
+.album__four {
+  background: url("/assets/album-covers/album-4@2x.png");
+  background-size: cover; }
+
+.album__five {
+  background: url("/assets/album-covers/album-5@2x.png");
+  background-size: cover; }
+
+.album__six {
+  background: url("/assets/album-covers/album-6@2x.png");
+  background-size: cover; }
+
+.album__seven {
+  background: url("/assets/album-covers/album-7@2x.png");
+  background-size: cover; }
+
+.album__eight {
+  background: url("/assets/album-covers/album-8@2x.png");
+  background-size: cover; }
+
+.album__nine {
+  background: url("/assets/album-covers/album-9@2x.png");
+  background-size: cover; }
+
+.album__ten {
+  background: url("/assets/album-covers/album-10@2x.png");
+  background-size: cover; }
+
+.album__eleven {
+  background: url("/assets/album-covers/album-11@2x.png");
+  background-size: cover; }
+
+.album__twelve {
+  background: url("/assets/album-covers/album-12@2x.png");
+  background-size: cover; }
+
+.album__thirteen {
+  background: url("/assets/album-covers/album-13@2x.png");
+  background-size: cover; }
+
+.album__fourteen {
+  background: url("/assets/album-covers/album-14@2x.png");
+  background-size: cover; }
+
+.album__fifteen {
+  background: url("/assets/album-covers/album-15@2x.png");
+  background-size: cover; }
+
+.album__sixteen {
+  background: url("/assets/album-covers/album-16@2x.png");
+  background-size: cover; }
+
+.album__seventeen {
+  background: url("/assets/album-covers/album-17@2x.png");
+  background-size: cover; }
+
+.album__eighteen {
+  background: url("/assets/album-covers/album-18@2x.png");
+  background-size: cover; }
+
+.album__nineteen {
+  background: url("/assets/album-covers/album-19@2x.png");
+  background-size: cover; }
+
+.album__twenty {
+  background: url("/assets/album-covers/album-20@2x.png");
+  background-size: cover; }
+
+.album__twentyone {
+  background: url("/assets/album-covers/album-21@2x.png");
+  background-size: cover; }
+
+.album__twentytwo {
+  background: url("/assets/album-covers/album-22@2x.png");
+  background-size: cover; }
+
+.album__twentythree {
+  background: url("/assets/album-covers/album-23@2x.png");
+  background-size: cover; }
+
+.album__twentyfour {
+  background: url("/assets/album-covers/album-24@2x.png");
+  background-size: cover; }
+
+@media screen and (max-width: 1460px) {
+  .center__container {
+    height: 640px; }
+
+  .library__container {
+    float: none;
+    margin: auto;
+    left: 0px; } }
+.player__container {
+  background-color: #164952;
+  height: 99px;
+  box-shadow: 0px -3px 5px 0px rgba(0, 0, 0, 0.25); }
+
+.player__inner__container {
+  height: 65px;
+  position: relative;
+  top: 17px;
+  margin-left: 50px;
+  margin-right: 50px; }
+
+.player__album__cover {
+  background: url("/assets/album-covers/album-1@2x.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 65px;
+  width: 65px;
+  border-radius: 3px; }
+
+.player__album__title {
+  width: 150px;
+  height: 20px;
+  text-align: left;
+  color: white;
+  font-weight: 300;
+  position: absolute;
+  top: 0px;
+  left: 80px;
+  user-select: none; }
+
+.player__album__progress {
+  width: 65%;
+  position: absolute;
+  left: 80px;
+  height: 2px;
+  top: 30px;
+  background-color: #A2A2A2; }
+
+.player__progress__bar {
+  background-color: white;
+  height: 2px; }
+
+.player__progress__circle {
+  width: 12px;
+  height: 12px;
+  border-radius: 50px;
+  background-color: white;
+  position: relative;
+  top: -7px; }
+
+.player__song__length {
+  width: 30px;
+  height: 15px;
+  color: white;
+  float: right;
+  position: relative;
+  top: -5px;
+  font-size: 12px;
+  text-align: right; }
+
+.player__btn__loop {
+  background: url("/assets/ui/icons/repeat-icon@2x.png");
+  background-size: cover;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 49px;
+  left: 180px;
+  opacity: 0.5;
+  cursor: pointer;
+  transition: opacity 0.3s; }
+  .player__btn__loop.btn__loop--enabled {
+    opacity: 1; }
+
+.player__btn__shuffle {
+  background: url("/assets/ui/icons/shuffle-icon@2x.png");
+  background-size: cover;
+  width: 25px;
+  height: 17px;
+  position: absolute;
+  top: 50px;
+  left: 130px;
+  opacity: 0.5;
+  cursor: pointer;
+  transition: opacity 0.5s; }
+  .player__btn__shuffle:hover {
+    opacity: 1; }
+
+.player__btn__play {
+  background: url("/assets/ui/icons/play-icon@2x.png");
+  background-size: cover;
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  top: 45px;
+  left: 80px;
+  opacity: 0.5;
+  cursor: pointer;
+  transition: opacity 0.3s; }
+  .player__btn__play.btn__play--enabled {
+    opacity: 1; }
+
+.player__user__name {
+  position: relative;
+  top: 15px;
+  font-size: 14px;
+  font-weight: bold;
+  left: 5px;
+  letter-spacing: -1px;
+  cursor: pointer;
+  user-select: none; }
+
+.player__user__playlist {
+  width: 220px;
+  height: 65px;
+  float: right;
+  position: relative;
+  top: -65px;
+  right: -20px;
+  margin-right: 7px; }
+
+.user__playlist__avatar {
+  background: url("/assets/avatars/avatar-5@2x.png");
+  background-size: cover;
+  width: 65px;
+  height: 65px;
+  float: left; }
+
+.user__name--playlist {
+  color: white;
+  width: auto; }
+
+.user__activity--playlist {
+  color: white; }
+
+@media screen and (max-width: 1460px) {
+  .player__user__playlist {
+    display: none; }
+
+  .player__album__progress {
+    width: 82%; } }

@@ -1,0 +1,225 @@
+$libraryContainerColor: #E1F1F3;
+$libraryBtnColor: #35b57f;
+
+.library__container {
+  position: relative;
+  left: 50px;
+  width: 650px;
+  height: 340px;
+  float: left;
+  background-color: $colorOne;
+  border-radius: 5px;
+}
+
+.library__header {
+  width: 100%;
+  height: 75px;
+}
+
+.library__title {
+  position: relative;
+  text-align: center;
+  font-weight: 100;
+  margin-top: 10px;
+  letter-spacing: -2px;
+  padding-top: 4px;
+  width: 300px;
+  font-size: 52px;
+  float: left;
+  user-select: none;
+  cursor: default;
+}
+
+.library__btn__discoverArtists {
+  float: right;
+  position: relative;
+  background-color: $colorFour;
+  top: 30px;
+  height: 40px;
+  width: 150px;
+  border-radius: 50px;
+  right: 30px;
+  cursor: pointer;
+  transition: background-color 0.5s;
+
+  &:hover {
+    background-color: darken($colorFour, 10%);
+  }
+}
+
+.library__btn__discoverArtists__txt {
+  color: white;
+  margin: 0px;
+  margin-top: 10px;
+  font-weight: 300;
+  text-align: center;
+  user-select: none;
+  cursor: pointer;
+}
+
+.library__albums__container {
+  height: 255px;
+  position: relative;
+  top: 10px;
+}
+
+.library__albums {
+  width: 65px;
+  height: 65px;
+  float: left;
+  margin-left: 15px;
+  margin-top: 15px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.library__hover {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0;
+  border-radius: 3px;
+  transition: opacity 0.3s;
+
+  &:hover {
+    opacity: 0.5;
+  }
+}
+
+.library__hover__img {
+  background: url("/assets/ui/icons/play-icon@2x.png"); // Play Icon Image
+  width: 39px;
+  height: 39px;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+// All The Album Images
+.album__one {
+  background: url("/assets/album-covers/album-1@2x.png");
+  background-size: cover;
+}
+
+.album__two {
+  background: url("/assets/album-covers/album-2@2x.png");
+  background-size: cover;
+}
+
+.album__three {
+  background: url("/assets/album-covers/album-3@2x.png");
+  background-size: cover;
+}
+
+.album__four {
+  background: url("/assets/album-covers/album-4@2x.png");
+  background-size: cover;
+}
+.album__five {
+  background: url("/assets/album-covers/album-5@2x.png");
+  background-size: cover;
+}
+
+.album__six {
+  background: url("/assets/album-covers/album-6@2x.png");
+  background-size: cover;
+}
+.album__seven {
+  background: url("/assets/album-covers/album-7@2x.png");
+  background-size: cover;
+}
+
+.album__eight {
+  background: url("/assets/album-covers/album-8@2x.png");
+  background-size: cover;
+}
+.album__nine {
+  background: url("/assets/album-covers/album-9@2x.png");
+  background-size: cover;
+}
+
+.album__ten {
+  background: url("/assets/album-covers/album-10@2x.png");
+  background-size: cover;
+}
+.album__eleven {
+  background: url("/assets/album-covers/album-11@2x.png");
+  background-size: cover;
+}
+
+.album__twelve {
+  background: url("/assets/album-covers/album-12@2x.png");
+  background-size: cover;
+}
+.album__thirteen {
+  background: url("/assets/album-covers/album-13@2x.png");
+  background-size: cover;
+}
+
+.album__fourteen {
+  background: url("/assets/album-covers/album-14@2x.png");
+  background-size: cover;
+}
+
+.album__fifteen {
+  background: url("/assets/album-covers/album-15@2x.png");
+  background-size: cover;
+}
+
+.album__sixteen{
+  background: url("/assets/album-covers/album-16@2x.png");
+  background-size: cover;
+}
+
+.album__seventeen {
+  background: url("/assets/album-covers/album-17@2x.png");
+  background-size: cover;
+}
+
+.album__eighteen {
+  background: url("/assets/album-covers/album-18@2x.png");
+  background-size: cover;
+}
+
+.album__nineteen {
+  background: url("/assets/album-covers/album-19@2x.png");
+  background-size: cover;
+}
+
+.album__twenty {
+  background: url("/assets/album-covers/album-20@2x.png");
+  background-size: cover;
+}
+
+.album__twentyone {
+  background: url("/assets/album-covers/album-21@2x.png");
+  background-size: cover;
+}
+
+.album__twentytwo {
+  background: url("/assets/album-covers/album-22@2x.png");
+  background-size: cover;
+}
+
+.album__twentythree {
+  background: url("/assets/album-covers/album-23@2x.png");
+  background-size: cover;
+}
+
+.album__twentyfour {
+  background: url("/assets/album-covers/album-24@2x.png");
+  background-size: cover;
+}
+
+@media screen and (max-width: 1460px) {
+  .center__container {
+    height: 640px;
+  }
+
+  .library__container {
+    float: none;
+    margin: auto;
+    left: 0px;
+  }
+}

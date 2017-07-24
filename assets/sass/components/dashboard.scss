@@ -1,0 +1,117 @@
+body {
+  background-color: $colorTwo;
+  font-family: $fontOne;
+  margin: 0px;
+  padding: 0px;
+}
+
+.app__container {
+  width: 72%;
+  min-width: 755px;
+  height: 100%;
+  margin: auto;
+}
+
+.header__container {
+  height: 100px;
+}
+
+.header__logo {
+  background: url("/assets/ui/brand-logo@2x.png"); // Plumify Logo
+  background-size: cover;
+  width: 125px;
+  height: 30px;
+  position: relative;
+  float: left;
+  top: 50%;
+  left: 60px;
+  transform: translateY(-50%);
+}
+
+.header__user {
+  background: url("/assets/avatars/avatar-3@2x.png"); // Logged in User Avatar
+  background-size: cover;
+  width: 60px;
+  height: 60px;
+  right: 60px;
+  float: right;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  cursor: pointer;
+}
+
+.user__menu__arrow {
+  background-color: white;
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  top: 65px;
+  left: 23px;
+  transform: rotate(45deg);
+  display: block;
+
+  &.arrow--hide {
+    display: none;
+  }
+}
+
+.user__menu {
+  background-color: white;
+  border-radius: 5px;
+  width: 190px;
+  height: 150px;
+  position: absolute;
+  top: 70px;
+  right: 0px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.3);
+  display: block;
+  user-select: none;
+
+  &.menu--hide {
+    display: none;
+  }
+}
+
+.menu__option {
+  width: 100%;
+  height: 50px;
+  cursor: pointer;
+}
+
+.option__img {
+  height: 25px;
+  width: 25px;
+  float: left;
+  margin: 12px;
+}
+
+.option__txt {
+  letter-spacing: -1px;
+  position: relative;
+  top: 14px;
+}
+
+.option--help {
+  background: url("/assets/ui/icons/help-icon@2x.png"); // Help & Support Icon Image
+  background-size: cover;
+}
+
+.option--preferences {
+  background: url("/assets/ui/icons/preferences-icon@2x.png"); // Preferences Icon Image
+  background-size: cover;
+}
+
+.option--logout {
+  background: url("/assets/ui/icons/logout-icon@2x.png"); // Logout Icon Image
+  background-size: cover;
+}
+
+.center__container {
+  position: relative;
+  height: 575px;
+  margin: 10px;
+}
