@@ -7,7 +7,7 @@ Tomify - By Thomas Beton
 
 **Install:**
 
-- Clone the repository from BitBucket.
+- Clone the repository.
 - Navigate with **Command Prompt** to the directory.
 - Use '**npm install**' to install the dependencies.
 - Use '**npm install -g http-server**' to install the http-server.
